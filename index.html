@@ -1,51 +1,19 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+
+<html>
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<title>Exa Futbol</title>
-<style>
-body {
-	padding:0px;
-	margin:0px;
-}
-#mainframe {
-	position:relative;
-	display:block;
-	border:none;
-	padding:0px;
-	margin:0px;
-}
-</style>
-<script src="jquery-1.11.0.min.js"></script>
-<script src="phonegap.js"></script>
-</head>
+		<title>redirect</title>
 
-<body>
+		<script>
 
-<iframe id="mainframe" src="http://www.exafutbol.com.py"></iframe>
+			window.location='./main.html';
 
-</body>
+		</script>
 
-<script>
+<body>		
 
-var mainwidth = $(window).width();
-var mainheight = $(window).height();
-$(document).ready(function(e) {
-    $('#mainframe').width(mainwidth);
-	$('#mainframe').height(mainheight);
-});
-$( window ).resize(function() {
-	mainwidth = $(window).width();
-	mainheight = $(window).height();
-	$('#mainframe').width(mainwidth);
-	$('#mainframe').height(mainheight);
-});
-</script>
+	</body>
 
 </html>
