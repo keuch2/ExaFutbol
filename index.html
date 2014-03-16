@@ -41,14 +41,24 @@ if(checkJSNetConnection()==true){
 	window.location='./main.html';
 } else {
 	
-	var r=confirm("Press a button");
+	var r=confirm("Para usar la aplicacion debes estar conectado a internet.");
 if (r==true)
   {
-  exitFromApp();
+  if (navigator.app) {
+            navigator.app.exitApp();
+        }
+        else if (navigator.device) {
+            navigator.device.exitApp();
+        }
   }
 else
   {
-  exitFromApp();
+  if (navigator.app) {
+            navigator.app.exitApp();
+        }
+        else if (navigator.device) {
+            navigator.device.exitApp();
+        }
   }
 	
 }
