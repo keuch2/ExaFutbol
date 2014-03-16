@@ -6,7 +6,20 @@
 
 		<title>redirect</title>
 <script src="jquery-1.11.0.min.js"></script>
+<script src="phonegap.js"></script>
 <script>
+
+
+
+function onLoad()
+{
+	document.addEventListener("deviceready", onDeviceReady, true);
+}
+
+function exitFromApp()
+{
+	navigator.app.exitApp();
+}
 
 function checkJSNetConnection(){
  var xhr = new XMLHttpRequest();
@@ -27,7 +40,17 @@ function checkJSNetConnection(){
 if(checkJSNetConnection()==true){
 	window.location='./main.html';
 } else {
-	alert("Para usar la aplicación debes estar conectado a internet.");
+	
+	var r=confirm("Press a button");
+if (r==true)
+  {
+  exitFromApp();
+  }
+else
+  {
+  exitFromApp();
+  }
+	
 }
 
 			
