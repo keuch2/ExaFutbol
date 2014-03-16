@@ -10,17 +10,6 @@
 <script>
 
 
-
-function onLoad()
-{
-	document.addEventListener("deviceready", onDeviceReady, true);
-}
-
-function exitFromApp()
-{
-	navigator.app.exitApp();
-}
-
 function checkJSNetConnection(){
  var xhr = new XMLHttpRequest();
  var file = "http://www.exafutbol.com.py/test.png";
@@ -44,25 +33,13 @@ if(checkJSNetConnection()==true){
 	var r=confirm("Para usar la aplicacion debes estar conectado a internet.");
 if (r==true)
   {
-  if (navigator.app) {
-            navigator.app.exitApp();
-        }
-        else if (navigator.device) {
-            navigator.device.exitApp();
-        }
+  device.exitApp();
   }
 else
   {
-  if (navigator.app) {
-            navigator.app.exitApp();
-        }
-        else if (navigator.device) {
-            navigator.device.exitApp();
-        }
-  }
-	
+  device.exitApp();
 }
-
+}
 			
 
 		</script>
