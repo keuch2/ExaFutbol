@@ -6,6 +6,8 @@
         version     = "0.0.1" >
 
     <!-- versionCode is optional and Android only -->
+	
+	<preference name="splash-screen-duration" value="5000" />
 
     <name>Exa Futbol</name>
 
@@ -17,7 +19,15 @@
         Boris Dedoff
     </author>
 	
+	<icon src="icon57.png" width="57" height="57" />
+	<icon src="icon72.png" gap:platform="ios" width="72" height="72" />
+	<icon src="icon114.png" width="114" height="114" />
+	
 	<gap:platform name="android" />
+	
+	<gap:splash src="Default.png" gap:platform="android" gap:density="ldpi" />
+	<gap:splash src="Default.png" gap:platform="android" gap:density="mdpi" />
+	<gap:splash src="Default.png" gap:platform="android" gap:density="hdpi" />
 	
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<access origin="*" />
