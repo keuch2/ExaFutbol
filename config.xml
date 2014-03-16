@@ -30,12 +30,8 @@
 	<gap:splash src="Default.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="Default.png" gap:platform="android" gap:density="hdpi" />
 	
-	<gap:config-file platform="android" parent="/manifest">
-			<uses-permission android:name="android.permission.INTERNET" />
-			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	</gap:config-file>
-	
 	<feature name="http://api.phonegap.com/1.0/network"/>
+
 	<access origin="*" />
 
 </widget>

@@ -5,10 +5,32 @@
 <head>
 
 		<title>redirect</title>
+<script src="jquery-1.11.0.min.js"></script>
+<script>
 
-		<script>
+function checkJSNetConnection(){
+ var xhr = new XMLHttpRequest();
+ var file = "http://www.exafutbol.com.py/test.png";
+ var r = Math.round(Math.random() * 10000); 
+ xhr.open('HEAD', file + "?subins=" + r, false); 
+ try {
+  xhr.send(); 
+  if (xhr.status >= 200 && xhr.status < 304) {
+   return true;
+  } else {
+   return false;
+  }
+ } catch (e) {
+  return false;
+ }
+}
+if(checkJSNetConnection()==true){
+	window.location='./main.html';
+} else {
+	alert("Para usar la aplicación debes estar conectado a internet.");
+}
 
-			window.location='./main.html';
+			
 
 		</script>
 
