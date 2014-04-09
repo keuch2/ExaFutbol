@@ -9,7 +9,8 @@
 <script src="phonegap.js"></script>
 <script>
 
-
+window.location='./main.html';
+/*
 function checkJSNetConnection(){
  var xhr = new XMLHttpRequest();
  var file = "http://www.exafutbol.com.py/test.png";
@@ -31,6 +32,7 @@ if(checkJSNetConnection()==true){
 } else {
 	
 	var r=confirm("Para usar la aplicacion debes estar conectado a internet.");
+	device.exitApp();
 if (r==true)
   {
   device.exitApp();
@@ -39,7 +41,7 @@ else
   {
   device.exitApp();
 }
-}
+}*/
 			
 
 		</script>
