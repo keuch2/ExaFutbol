@@ -7,7 +7,7 @@
         version     = "1.0.3" >
 
     <!-- versionCode is optional and Android only -->
-	
+	<preference name="phonegap-version" value="3.0.0" />
 	<preference name="splash-screen-duration" value="5000" />
 
     <name>Pilsen ExaFutbol</name>
