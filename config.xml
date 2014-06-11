@@ -31,6 +31,16 @@
 	<gap:splash src="Default.png" gap:platform="android" gap:density="mdpi" />
 	<gap:splash src="Default.png" gap:platform="android" gap:density="hdpi" />
 	
+	<gap:splash src="splashios.png" gap:platform="ios" width="320" height="480" />
+	
+	<!-- iPhone / iPod Touch  -->
+	<icon src="icon60.png" gap:platform="ios" width="60" height="60" />
+	<icon src="icon120.png" gap:platform="ios" width="120" height="120" />
+
+	<!-- iPad -->
+	<icon src="icon76.png" gap:platform="ios" width="76" height="76" />
+	<icon src="icon152.png" gap:platform="ios" width="152" height="152" />
+	
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
 	<access origin="*" />
