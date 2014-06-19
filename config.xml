@@ -3,11 +3,11 @@
         xmlns:gap       = "http://phonegap.com/ns/1.0"
     	xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.areadeportiva.exafutbol"
-        versionCode = "13" 
-        version     = "1.0.3" >
+        versionCode = "14" 
+        version     = "1.0.4" >
 
     <!-- versionCode is optional and Android only -->
-	<preference name="phonegap-version" value="3.0.0" />
+	<preference name="phonegap-version" value="3.3.0" />
 	<preference name="splash-screen-duration" value="5000" />
 
     <name>Pilsen ExaFutbol</name>
